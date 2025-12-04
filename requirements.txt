@@ -1,0 +1,5 @@
+﻿pyqt6
+pyserial
+opencv-python
+# pypylon optional: require Basler Pylon runtime on system before installing
+pypylon
