@@ -1,0 +1,284 @@
+QWidget {
+    background-color: #15171d;
+    color: #e6e6e6;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* Ensure all widgets have transparent backgrounds unless specified */
+QWidget:disabled {
+    color: #6c6f7a;
+}
+
+#Title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+    border: none;
+}
+
+#Subtitle {
+    font-size: 13px;
+    color: #9aa0aa;
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+    border: none;
+}
+
+/* Tab Widget Styling */
+QTabWidget::pane {
+    border: none;
+    background: #15171d;
+    border-radius: 8px;
+}
+
+QTabBar {
+    background: transparent;
+}
+
+QTabBar::tab {
+    background: #1d1f26;
+    color: #b8bcc8;
+    padding: 8px 18px;
+    border-radius: 6px;
+    margin-right: 4px;
+    border: none;
+    min-width: 80px;
+}
+
+QTabBar::tab:hover {
+    background: #252830;
+    color: #ffffff;
+}
+
+QTabBar::tab:selected {
+    background: #7c5cff;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+QGroupBox {
+    border: 1px solid #2b2f3a;
+    background: #1c1f26;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 8px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 16px;
+    padding: 0 8px;
+    color: #b8bcc8;
+    font-weight: 600;
+    font-size: 13px;
+    background-color: #1c1f26;
+}
+
+/* Slider Styling */
+QSlider::groove:horizontal {
+    height: 6px;
+    background: #2b2f3a;
+    border-radius: 3px;
+    margin: 0px;
+}
+
+QSlider::handle:horizontal {
+    width: 16px;
+    height: 16px;
+    background: #7c5cff;
+    margin: -5px 0;
+    border-radius: 8px;
+    border: 2px solid #15171d;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #8d6dff;
+    width: 18px;
+    height: 18px;
+    margin: -6px 0;
+}
+
+QSlider::handle:horizontal:pressed {
+    background: #6b4ce6;
+}
+
+/* Button Styling */
+QPushButton {
+    background: #7c5cff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: 500;
+    min-height: 32px;
+}
+
+QPushButton:hover {
+    background: #8d6dff;
+}
+
+QPushButton:pressed {
+    background: #6b4ce6;
+}
+
+QPushButton:disabled {
+    background: #2b2f3a;
+    color: #6c6f7a;
+}
+
+QPushButton#Danger {
+    background: #d04f4f;
+}
+
+QPushButton#Danger:hover {
+    background: #e05f5f;
+}
+
+QPushButton#Danger:pressed {
+    background: #b03f3f;
+}
+
+/* CheckBox Styling */
+QCheckBox {
+    spacing: 8px;
+    color: #e6e6e6;
+    background: transparent;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #2b2f3a;
+    border-radius: 4px;
+    background: #1d1f26;
+}
+
+QCheckBox::indicator:hover {
+    border-color: #7c5cff;
+    background: #252830;
+}
+
+QCheckBox::indicator:checked {
+    background: #7c5cff;
+    border-color: #7c5cff;
+    image: none;
+}
+
+QCheckBox::indicator:checked:hover {
+    background: #8d6dff;
+    border-color: #8d6dff;
+}
+
+QCheckBox::indicator:indeterminate {
+    background: #5a5a5a;
+    border-color: #5a5a5a;
+}
+
+/* SpinBox Styling */
+QSpinBox {
+    background: #1d1f26;
+    border: 1px solid #2b2f3a;
+    border-radius: 6px;
+    padding: 4px 8px;
+    min-width: 60px;
+    color: #e6e6e6;
+}
+
+QSpinBox:hover {
+    border-color: #3b3f4a;
+}
+
+QSpinBox:focus {
+    border-color: #7c5cff;
+    background: #252830;
+}
+
+QSpinBox::up-button {
+    background: #2b2f3a;
+    border-left: 1px solid #2b2f3a;
+    border-top-right-radius: 6px;
+    width: 20px;
+}
+
+QSpinBox::up-button:hover {
+    background: #3b3f4a;
+}
+
+QSpinBox::down-button {
+    background: #2b2f3a;
+    border-left: 1px solid #2b2f3a;
+    border-bottom-right-radius: 6px;
+    width: 20px;
+}
+
+QSpinBox::down-button:hover {
+    background: #3b3f4a;
+}
+
+QSpinBox::up-arrow {
+    image: none;
+    width: 0px;
+    height: 0px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 5px solid #b8bcc8;
+    margin: 2px;
+}
+
+QSpinBox::down-arrow {
+    image: none;
+    width: 0px;
+    height: 0px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #b8bcc8;
+    margin: 2px;
+}
+
+/* Label Styling */
+QLabel {
+    color: #e6e6e6;
+    padding: 2px;
+    background: transparent;
+    border: none;
+}
+
+/* Remove any default frame or background from labels */
+QLabel:disabled {
+    color: #6c6f7a;
+    background: transparent;
+}
+
+/* Disabled SpinBox styling */
+QSpinBox:disabled {
+    background: #1a1c22;
+    border-color: #1a1c22;
+    color: #6c6f7a;
+}
+
+#CameraPlaceholder {
+    background: #0e1015;
+    border: 1px solid #2b2f3a;
+    border-radius: 10px;
+    color: #6c6f7a;
+    font-size: 13px;
+    min-height: 200px;
+    max-height: 250px;
+}
+
+#Temperature {
+    color: #4fc3f7;
+    font-weight: 700;
+    font-size: 15px;
+    background: transparent;
+    padding: 0px;
+    margin-left: 8px;
+    border: none;
+    letter-spacing: 0.5px;
+}
